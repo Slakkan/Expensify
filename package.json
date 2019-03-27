@@ -9,7 +9,9 @@
     "build:dev": "webpack",
     "build:prod": "webpack -p --env production",
     "dev-server": "webpack-dev-server",
-    "test": "jest --config=jest.config.json --watchAll"
+    "test": "jest --config=jest.config.json --watchAll",
+    "start": "node server/server.js",
+    "heroku-postbuild": "npm run build:prod"
   },
   "dependencies": {
     "@babel/core": "^7.3.4",
@@ -20,6 +22,7 @@
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "css-loader": "^2.1.1",
     "enzyme-to-json": "^3.3.5",
+    "express": "^4.16.4",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "jest": "^24.5.0",
     "live-server": "^1.2.1",
