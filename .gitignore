@@ -1,5 +1,2 @@
 node_modules/
-public/app.js
-public/app.js.map
-public/styles.css
-public/styles.css.map
+public/dist/
